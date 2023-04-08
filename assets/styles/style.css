@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+.wrapper {
+  background-image: url(../images/pic.png);
+  background-repeat: no-repeat;
+  background-size: 45% 90%;
+  background-position: bottom right;
+}
+.wrapper .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.header__inner .header__logo {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.header__inner .header__logo .headeer__logo-name {
+  padding-bottom: 8px;
+}
+.header__inner .header__btn {
+  background: #5222d0;
+  border-radius: 100px;
+  width: 115px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  font-family: "Roboto", Georgia, sans-serif;
+}
+
+.main__info {
+  padding-top: 20px;
+  margin-bottom: 90px;
+  padding-left: 50px;
+}
+.main__info .main__text-title {
+  font-family: "Roboto", Georgia, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  max-width: 542px;
+}
+.main__info .main__text-info {
+  font-family: "Roboto Slab", Georgia, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 530px;
+  margin: 0;
+}
+.main__info .main__btn {
+  display: flex;
+  background: #5222d0;
+  border-radius: 100px;
+  width: 270px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  font-family: "Roboto", Georgia, sans-serif;
+  align-items: center;
+  padding: 28px 90px 21px 33px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-top: 25px;
+}
+
+.nav {
+  padding-left: 50px;
+}
+.nav .nav__list {
+  display: flex;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  padding: 0%;
+}
+.nav .nav__list .nav__link {
+  font-weight: 300;
+  font-size: 20px;
+  color: #5222d0;
+  font-family: "Roboto Slab", Georgia, sans-serif;
+}
+
+.nav__link:hover {
+  border-bottom: 3px solid rgb(107, 206, 255);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    background: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    background: none;
+  }
+  .main__info .main__text-title {
+    font-size: 30px;
+  }
+  .main__info .main__text-info {
+    font-size: 15px;
+  }
+  .main__info .main__btn {
+    width: 130px;
+    font-size: 15px;
+    padding: 10px 30px 10px 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .main__info .main__btn img {
+    width: 35%;
+  }
+  .nav .nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .nav .nav__link {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
